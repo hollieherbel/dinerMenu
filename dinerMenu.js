@@ -1,6 +1,30 @@
 
-const pickOne = prompt('Please choose one side: Chips, Fries, or Tots');
+const prices = {
+    
+  'hamburger': '4.00',
+  'hotdog': '3.50',
+  'sandwich': '4.00',
   
+  
+  'chips': '2.00',
+  'fries': '2.50',
+  'tots': '2.75',
+};
+
+
+const pickMeal = prompt('Hello, please choose your meal: Hamburger, Hotdog, or Sandwich.');
+
+if (pickMeal === 'hamburger') {
+  alert(`Your hamburger is $${prices.hamburger}`)
+}   else if (pickMeal === 'hotdog') {
+  alert(`Your hotdog is $${prices.hotdog}`)
+}   else if (pickMeal === 'sandwich') {
+  alert(`Your sandwich is $${prices.sandwich}`)
+}    
+
+
+const pickOne = prompt('Please choose one side: Chips, Fries, or Tots');
+
 if (pickOne === 'chips') {
   alert(`Your chips are $${prices.chips}`)
 }   else if (pickOne === 'fries') {
